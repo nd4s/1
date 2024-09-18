@@ -1,12 +1,54 @@
-<<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://www.google.com">
     <title>Redirecting...</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 0; /* Remove padding */
+        }
+        .montserrat-custom, .montserrat-medium {
+            font-family: "Montserrat", sans-serif;
+            display: block; 
+            margin: 0 auto; 
+            width: 80vw; 
+        }
+        .montserrat-custom {
+            font-weight: 900; 
+            font-size: 5vh; 
+            color: #b80000;
+        }
+        .montserrat-medium {
+            font-weight: 500; 
+            font-size: 2.2vh;
+            color: black;
+        }
+        a {
+            text-decoration: none;
+        }
+        @media (min-width: 768px) {
+            .montserrat-custom {
+                font-size: 3em; /* Adjust font size for desktop */
+                width: 50vw; /* Adjust width for desktop */
+            }
+            .montserrat-medium {
+                font-size: 1.5em; /* Adjust font size for desktop */
+                width: 50vw; /* Adjust width for desktop */
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://www.google.com">click here</a>.</p>
+    <div>
+        <a href="https://www.google.com" class="montserrat-custom">НАТИСНІСТЬ</a>
+        <a href="https://www.google.com" class="montserrat-medium">якщо Ви досі бачите цей текст</a>
+    </div>
 </body>
 </html>
