@@ -12,7 +12,7 @@
             height: 100vh;
             margin: 0;
             text-align: center;
-            padding: 0; /* Remove padding */
+            padding: 0; 
         }
         .montserrat-custom, .montserrat-medium {
             font-family: "Montserrat", sans-serif;
@@ -35,20 +35,36 @@
         }
         @media (min-width: 768px) {
             .montserrat-custom {
-                font-size: 3em; /* Adjust font size for desktop */
-                width: 50vw; /* Adjust width for desktop */
+                font-size: 3em; 
+                width: 50vw;
             }
             .montserrat-medium {
-                font-size: 1.5em; /* Adjust font size for desktop */
-                width: 50vw; /* Adjust width for desktop */
+                font-size: 1.5em;
+                width: 50vw;
             }
+        }
+
+        /* Fade-in effect */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div id="content" class="fade-in">
         <a href="https://www.google.com" class="montserrat-custom">НАТИСНІСТЬ</a>
         <a href="https://www.google.com" class="montserrat-medium">якщо Ви досі бачите цей текст</a>
     </div>
+
+    <script>
+        // Show the div after 1.5 seconds
+        setTimeout(() => {
+            document.getElementById('content').classList.add('visible');
+        }, 1500);
+    </script>
 </body>
 </html>
